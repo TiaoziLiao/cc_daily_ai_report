@@ -10,6 +10,22 @@ Daily report generation (`/daily-ai-report` runs) is NOT recorded here — only 
 
 ## 2026-03-23
 
+### 更新研究方向优先级
+- **What**: 将 VLM / Omni Model / 统一模型 / 世界模型 提升为最高优先级，图像生成降为第 4 优先级
+- **Why**: 用户研究方向转变，核心关注点从图像生成转向 VLM、Omni Model、理解生成统一模型和世界模型
+- **Approach**: 同步更新 CLAUDE.md（研究背景、关键词体系、评级标准、关联度标签、标签体系）、项目命令文件和全局命令文件中的优先级排序和关键词分类
+- **Files**: `CLAUDE.md`, `.claude/commands/daily-ai-report.md`, `~/.claude/commands/daily-ai-report.md`
+
+### 删除 init.md
+- **What**: 移除不再需要的 init.md 初始配置文件
+- **Why**: 所有相关配置已整合到 CLAUDE.md 和命令文件中，init.md 已无用
+- **Approach**: 直接 git rm 删除
+- **Files**: `init.md` (deleted)
+
+---
+
+## 2026-03-23
+
 ### Change Tracking
 
 - **What**: 建立三层变更追踪系统（CHANGELOG.md + Memory + CLAUDE.md 指令）

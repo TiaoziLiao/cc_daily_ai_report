@@ -11,14 +11,15 @@ allowed-tools: Bash(curl:*), Bash(mkdir:*), Bash(date:*), Bash(ls:*), Read, Writ
 ## 用户研究兴趣
 
 以下是用户关注的核心领域，按优先级排列：
-1. 图像生成（Diffusion Model, Flow Matching, DiT, Autoregressive Image Generation）
-2. 视频生成（Text-to-Video, Temporal Modeling, Video Understanding）
-3. 世界模型（World Model, Simulation, Physical Understanding）
-4. VLM / 多模态（Vision Language Model, Multimodal Reasoning）
-5. LLM（Large Language Model, Reasoning, Long Context）
-6. 强化学习（RL/RLHF/DPO/GRPO, Reward Model）
-7. 具身智能（Embodied AI, Robotics, Manipulation）
-8. Agent（AI Agent, Tool Use, Planning）
+1. VLM / 多模态（Vision Language Model, Multimodal Reasoning, Visual Understanding）
+2. Omni Model / 统一模型（Unified Understanding & Generation, Any-to-Any, Multimodal Generation）
+3. 世界模型（World Model, Simulation, Physical Understanding, Video Prediction）
+4. 图像生成（Diffusion Model, Flow Matching, DiT, Autoregressive Image Generation）
+5. 视频生成（Text-to-Video, Temporal Modeling, Video Understanding）
+6. LLM（Large Language Model, Reasoning, Long Context）
+7. 强化学习（RL/RLHF/DPO/GRPO, Reward Model）
+8. 具身智能（Embodied AI, Robotics, Manipulation）
+9. Agent（AI Agent, Tool Use, Planning）
 
 ## 配置
 
@@ -107,10 +108,10 @@ curl -s "https://export.arxiv.org/api/query?search_query=(cat:cs.CV+OR+cat:cs.AI
 **关键词匹配过滤**（三级优先）：
 
 **核心关键词**（必须优先展示）：
-diffusion, text-to-image, image generation, image synthesis, video generation, text-to-video, flow matching, rectified flow, consistency model, DiT, diffusion transformer, world model, world simulator
+vision language model, VLM, multimodal understanding, omni model, unified model, any-to-any, multimodal generation, unified understanding and generation, world model, world simulator, visual reasoning, image understanding
 
 **扩展关键词**（高优先级）：
-RLHF, reinforcement learning, reward model, DPO, GRPO, PPO, vision language model, VLM, multimodal, visual reasoning, LLM, large language model, reasoning, chain-of-thought, agent, tool use, embodied, robotics, manipulation
+diffusion, text-to-image, image generation, image synthesis, video generation, text-to-video, flow matching, rectified flow, consistency model, DiT, diffusion transformer, autoregressive image, visual tokenizer, RLHF, reinforcement learning, reward model, DPO, GRPO, PPO, LLM, large language model, reasoning, chain-of-thought, agent, tool use, embodied, robotics, manipulation
 
 **探索关键词**（补充）：
 image editing, inpainting, controlnet, 3D generation, multi-view, visual tokenizer, autoregressive image, video understanding, temporal consistency, efficient training, data curation, distillation, scaling law
@@ -119,10 +120,10 @@ image editing, inpainting, controlnet, 3D generation, multi-view, visual tokeniz
 - ⭐⭐⭐⭐⭐: 架构层面的突破创新、范式转换、重大 SOTA 刷新、顶级团队（OpenAI/Google/Meta/DeepMind）的重量级工作
 - ⭐⭐⭐⭐: 显著的方法改进、新颖的跨领域方法迁移、重要的开源模型/数据集发布
 - ⭐⭐⭐: 扎实的增量改进、有用的工程贡献、有趣的实验发现
-- 与用户核心兴趣（图像/视频生成、世界模型）直接相关的论文额外 +1 星
+- 与用户核心兴趣（VLM、Omni Model、统一模型、世界模型）直接相关的论文额外 +1 星
 
 **关联度标签**（为每篇论文标注与用户研究方向的关系）：
-- `#directly-relevant`: 与用户核心方向（图像/视频生成、Diffusion、DiT）直接相关
+- `#directly-relevant`: 与用户核心方向（VLM、Omni Model、统一模型、世界模型）直接相关
 - `#technique-borrow`: 方法/技巧可迁移借鉴到用户方向
 - `#inspiration`: 提供思路启发但非直接相关
 
@@ -245,11 +246,13 @@ top_paper: "最重要的论文标题"
 | ... | ... | ... | ... | ... | ... | ... |
 
 **今日主题分布**:
+- 🧠 VLM / 多模态理解: X 篇
+- 🌐 Omni Model / 统一模型: X 篇
+- 🌍 世界模型: X 篇
 - 🎨 图像生成/编辑: X 篇
 - 🎬 视频生成: X 篇
-- 🌍 世界模型: X 篇
+- 💬 LLM: X 篇
 - 🤖 RL / Reward Model: X 篇
-- 🧠 LLM / VLM: X 篇
 - 🦾 具身智能 / Agent: X 篇
 - 🔧 其他（效率/蒸馏/Benchmark）: X 篇
 
