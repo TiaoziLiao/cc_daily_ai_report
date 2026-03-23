@@ -22,28 +22,29 @@ cc_daily_ai_report/
 
 ## 用户研究背景
 
-**主要方向**: 图像生成大模型（Diffusion Model, Flow Matching, DiT, Autoregressive Image Generation）
+**主要方向**: VLM / Omni Model / 理解生成统一模型 / 世界模型
 
 **关注领域（按优先级）**:
 
-1. **图像生成** — Diffusion, Flow Matching, DiT, Consistency Model, Autoregressive
-2. **视频生成** — Text-to-Video, Temporal Modeling, Video Understanding
-3. **世界模型** — World Model, Simulation, Physical Understanding
-4. **VLM / 多模态** — Vision Language Model, Multimodal Reasoning
-5. **LLM** — Large Language Model, Reasoning, Long Context
-6. **强化学习** — RL / RLHF / DPO / GRPO, Reward Model（尤其 RL 优化生成质量）
-7. **具身智能** — Embodied AI, Robotics, Manipulation, Humanoid
-8. **Agent** — AI Agent, Tool Use, Planning
+1. **VLM / 多模态** — Vision Language Model, Multimodal Reasoning, Visual Understanding
+2. **Omni Model / 统一模型** — Unified Understanding & Generation, Any-to-Any, Multimodal Generation
+3. **世界模型** — World Model, Simulation, Physical Understanding, Video Prediction
+4. **图像生成** — Diffusion, Flow Matching, DiT, Consistency Model, Autoregressive
+5. **视频生成** — Text-to-Video, Temporal Modeling, Video Understanding
+6. **LLM** — Large Language Model, Reasoning, Long Context
+7. **强化学习** — RL / RLHF / DPO / GRPO, Reward Model（尤其 RL 优化生成质量）
+8. **具身智能** — Embodied AI, Robotics, Manipulation, Humanoid
+9. **Agent** — AI Agent, Tool Use, Planning
 
 ## 关键词体系
 
 ### 核心关键词（必须优先展示）
 
-diffusion, text-to-image, image generation, image synthesis, video generation, text-to-video, flow matching, rectified flow, consistency model, DiT, diffusion transformer, world model, world simulator
+vision language model, VLM, multimodal understanding, omni model, unified model, any-to-any, multimodal generation, unified understanding and generation, world model, world simulator, visual reasoning, image understanding
 
 ### 扩展关键词（高优先级）
 
-RLHF, reinforcement learning, reward model, DPO, GRPO, PPO, vision language model, VLM, multimodal, visual reasoning, LLM, large language model, reasoning, chain-of-thought, agent, tool use, embodied, robotics, manipulation, humanoid
+diffusion, text-to-image, image generation, image synthesis, video generation, text-to-video, flow matching, rectified flow, consistency model, DiT, diffusion transformer, autoregressive image, visual tokenizer, RLHF, reinforcement learning, reward model, DPO, GRPO, PPO, LLM, large language model, reasoning, chain-of-thought, agent, tool use, embodied, robotics, manipulation, humanoid
 
 ### 探索关键词（补充）
 
@@ -74,7 +75,7 @@ image editing, inpainting, controlnet, 3D generation, multi-view, visual tokeniz
 - **⭐⭐⭐⭐⭐**: 架构级突破、范式转换、重大 SOTA、顶级团队重量级工作
 - **⭐⭐⭐⭐**: 显著方法改进、新颖跨领域迁移、重要开源发布
 - **⭐⭐⭐**: 扎实增量改进、有用工程贡献、有趣实验发现
-- 与用户核心兴趣（图像/视频生成、世界模型）直接相关的论文额外 +1 星
+- 与用户核心兴趣（VLM、Omni Model、统一模型、世界模型）直接相关的论文额外 +1 星
 
 ## 论文详细度分级
 
@@ -84,7 +85,7 @@ image editing, inpainting, controlnet, 3D generation, multi-view, visual tokeniz
 
 ## 关联度标签
 
-- `#directly-relevant`: 与用户核心方向（图像/视频生成、Diffusion、DiT）直接相关
+- `#directly-relevant`: 与用户核心方向（VLM、Omni Model、统一模型、世界模型）直接相关
 - `#technique-borrow`: 方法/技巧可迁移借鉴到用户方向
 - `#inspiration`: 提供思路启发但非直接相关
 
@@ -98,7 +99,7 @@ image editing, inpainting, controlnet, 3D generation, multi-view, visual tokeniz
 
 ## 标签体系
 
-- **领域**: `#ImageGen` `#VideoGen` `#Diffusion` `#FlowMatching` `#DiT` `#RL` `#RLHF` `#VLM` `#Multimodal` `#3DGen` `#ImageEdit` `#LLM` `#Agent` `#Embodied` `#WorldModel`
+- **领域**: `#VLM` `#OmniModel` `#UnifiedModel` `#WorldModel` `#Multimodal` `#ImageGen` `#VideoGen` `#Diffusion` `#FlowMatching` `#DiT` `#RL` `#RLHF` `#3DGen` `#ImageEdit` `#LLM` `#Agent` `#Embodied`
 - **类型**: `#survey` `#method` `#benchmark` `#application` `#theory` `#system`
 - **关联度**: `#directly-relevant` `#technique-borrow` `#inspiration`
 
