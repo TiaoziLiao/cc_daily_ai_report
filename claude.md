@@ -8,13 +8,16 @@
 
 ```
 cc_daily_ai_report/
-├── claude.md              # 本文件 — Claude Code 项目级上下文
+├── CLAUDE.md              # 本文件 — Claude Code 项目级上下文
+├── CHANGELOG.md           # 变更历史（What/Why/Approach/Files）
 ├── init.md                # 参考配置（第三方类似项目）
 ├── reports/               # 日报输出目录
 │   └── {YYYY}/
 │       └── {MM}/
 │           └── {YYYY-MM-DD}.md   # 每日报告
 └── .claude/
+    ├── commands/
+    │   └── daily-ai-report.md    # 命令定义（核心）
     └── settings.local.json       # 权限配置
 ```
 
@@ -107,3 +110,21 @@ image editing, inpainting, controlnet, 3D generation, multi-view, visual tokeniz
 - arXiv 链接统一使用 `https://arxiv.org/abs/{id}` 格式
 - 图片嵌入使用 Markdown 标准语法 `![desc](url)`
 - 论文去重以 arXiv ID 为准，合并 HuggingFace 和 arXiv 两个来源
+
+## 变更记录规范
+
+每次修改项目文件（CLAUDE.md、命令文件、设置、报告模板等）后，**必须**：
+
+1. **更新 CHANGELOG.md** — 在最新日期下追加结构化条目：
+   - **What**: 一句话描述变更
+   - **Why**: 为什么要做这个改动
+   - **Approach**: 选择了什么方案（及排除其他方案的理由）
+   - **Files**: 修改的文件列表
+
+2. **更新 Memory**（如变更涉及设计决策）：
+   - 在 `~/.claude/projects/-Users-bytedance-Desktop-code-cc_daily_ai_report/memory/MEMORY.md` 的 Active Decisions 中新增/修改/删除过时条目
+   - 保持 MEMORY.md 在 150 行以内
+
+3. **不记录**：`/daily-ai-report` 日常运行。只记录系统本身的变更。
+
+新会话修改项目前，先读 CHANGELOG.md 了解近期变更。
