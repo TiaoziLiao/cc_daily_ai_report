@@ -10,7 +10,6 @@
 cc_daily_ai_report/
 ├── CLAUDE.md              # 本文件 — Claude Code 项目级上下文
 ├── CHANGELOG.md           # 变更历史（What/Why/Approach/Files）
-├── init.md                # 参考配置（第三方类似项目）
 ├── reports/               # 日报输出目录
 │   └── {YYYY}/
 │       └── {MM}/
